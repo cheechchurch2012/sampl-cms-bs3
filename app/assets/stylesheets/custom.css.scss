@@ -15,8 +15,23 @@ $grayLighter: #eee;
 
 /* universal */
 
+html, body {
+  background: url("http://cms.ucd.ie/t4cms/background_page.png") repeat-x scroll left top #E7E7E7;
+  color: #333333;
+}
+
 body {
   padding-top: 60px;
+}
+
+/* well */
+
+.well {
+  background: url("http://cms.ucd.ie/t4cms/background_doormat.png") repeat-x scroll left top #F5F5F5;
+  border-color: #DDDDDC;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  padding: 15px;
 }
 
 /* footer */
@@ -48,10 +63,28 @@ footer {
 /* typography */
 
 .ipsewp {
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
 }
 
 /* forms */

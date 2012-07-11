@@ -1,19 +1,68 @@
 <div class="container">
 
-<div class="well" style="padding: 8px;">
+<div class="well" style="padding: 8px;background: white">
+
+  <div class="row">
 
   <!-- Logos top  -->
-  <section id='body_content'>
-    <%=raw @page.content_for(:logostop) %>
-  </section>
+  <div class="span8">
+     <div class="well" style="padding:5px 40px;background: white">
+      <section id='content_logostop'>
+        <%=raw @page.content_for(:logostop) %>
+      </section>
+    </div>
+  </div>
+    
+  <div class="span3">
+     <!-- Fund  -->
+    <div class="well" style="padding: 8px 0;background: white">
+      <section id='content_fund'>
+        <%=raw @page.content_for(:fund) %>
+      </section>
+    </div>
+  </div>
   
+  </div>
+    
+        <!-- Hub  -->
+      <div class="well" style="padding: 8px 0;">
+        <section id='content_hub'>
+          <%=raw @page.content_for(:hub) %>
+        </section>
+      </div>  
+    
   <!-- Banner  -->
   <div class="hero-unit">
-    <%= image_tag "logo_IPSE.jpg" %>
-    <section id='body_content'>
+  
+  <div class="row">
+  
+    <div class="span2">
+      <%= image_tag "logo_IPSE_t.png" %>
+    </div>
+    
+    <div class="span5">  
+    <section id='content_banner'>
 		<%=raw @page.content_for(:banner) %>
 	</section>
     <p><a class="btn primary large">Learn more &raquo;</a></p>
+  </div>
+
+   <div class="span3">
+	  <!-- Carousel -->
+	  <div id="myCarousel" class="carousel slide">
+	    <!-- Carousel items -->
+	    <div class="carousel-inner">
+	      <div class="active item"><img alt="" src="/assets/carousel_tree.png"></div>
+	      <div class="item"><img alt="" src="/assets/carousel_lcf.png"></div>
+	      <div class="item"><img alt="" src="/assets/carousel_population.png"></div>
+	    </div>
+	    <!-- Carousel nav -->
+	    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	  </div> <!-- Carousel -->
+	</div>
+  
+  </div>
   </div>
   
   <div class="row">
@@ -54,21 +103,6 @@
 	      <li><h4 class="ipsewp"><a href="#">&raquo; Firm Level Innovation and Entrepreneurship</a></h4></li><hl>
 	    </ul>
 	  </div> <!-- Doormat second -->
-	</div>
-	
-	<div class="span4">
-	  <!-- Carousel -->
-	  <div id="myCarousel" class="carousel slide">
-	    <!-- Carousel items -->
-	    <div class="carousel-inner">
-	      <div class="active item"><img alt="" src="/assets/carousel_tree.png"></div>
-	      <div class="item"><img alt="" src="/assets/carousel_lcf.png"></div>
-	      <div class="item"><img alt="" src="/assets/carousel_population.png"></div>
-	    </div>
-	    <!-- Carousel nav -->
-	    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-	    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-	  </div> <!-- Carousel -->
 	</div>
 	
 	<div class="span2">
