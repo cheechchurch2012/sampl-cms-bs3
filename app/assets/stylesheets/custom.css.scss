@@ -1,8 +1,11 @@
 /* mixins, variables, etc. */
 
+$grayMediumLight: #eaeaea;
+
+$grayDarker: #222;
+$gray: #555;
 $grayLight: #999;
 $grayLighter: #eee;
-$grayMediumLight: #eaeaea;
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -13,61 +16,42 @@ $grayMediumLight: #eaeaea;
 /* universal */
 
 body {
-  background: white;
+  padding-top: 60px;
 }
 
-#body_content {
-  background: pink;
-}
+/* footer */
 
-#side_body_content {
-  background: yellow;
-}
-
-html {
-  overflow-y: scroll;
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-  h1 {
-    margin-bottom: 10px;
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover { 
+      color: $grayDarker;
+    }
+  }  
+  small { 
+    float: left; 
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
   }
 }
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-}
-
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $grayLight;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.7em;
+.ipsewp {
+  font-size: 1.3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* forms */
@@ -78,7 +62,6 @@ input, textarea, select, .uneditable-input {
   padding: 10px;
   height: auto;
   margin-bottom: 15px;
-  @include box_sizing;
 }
 
 #error_explanation {

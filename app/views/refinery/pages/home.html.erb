@@ -1,5 +1,7 @@
 <div class="container">
 
+<div class="well" style="padding: 8px;">
+
   <!-- Logos top  -->
   <section id='body_content'>
     <%=raw @page.content_for(:logostop) %>
@@ -35,19 +37,7 @@
           <li><%= link_to "Sign in", main_app.signin_path %></li>
           <% end %>
         </ul>
-      </div> <!-- Doormat first >
-      
-      <!-- Sign up button -->
-      <div style="padding: 8px 0;">
-        <%= link_to "Sign up now!", '/signup', class: "btn btn-large" %>
-      </div>
-      
-      <!-- Social -->
-      <div class="social_icons">
-        <a href="http://www.facebook.com/pages/IPSE/383610961706781"  target="_top"><img alt="Like us on Facebook" src="/assets/social_facebook.png"></a>
-        <a href="http://twitter.com/#!/IPSE_IRU" " target="_top"><img alt="Follow us on Twitter" src="/assets/social_twitter.png"></a>
-        <a href="http://www.linkedin.com/groups/Innovation-Policy-Simulation-Smart-Economy-4515718?gid=4515718&trk=hb_side_g" " target="_top"><img alt="Follow us on LinkedIn" src="/assets/social_linkedin.png"></a>
-      </div> <!-- social_icons -->
+      </div> <!-- Doormat first -->
       
     </div>
     
@@ -57,16 +47,16 @@
 	    <ul class="nav nav-list">
 	      <li class="nav-header">WORK PACKAGES</li>
 	      <li class="divider"></li>
-	      <li><h4><a href="#">IRU's Computational Policy Lab</a></h4></li>
+	      <li><h4 class="ipsewp"><a href="#">&raquo; IRU's Computational Policy Lab</a></h4></li>
 	      <li class="divider"></li>
-	      <li><h4><a href="#">Sectoral and Geographical Aspects of Innovation</a></h4></li>
+	      <li><h4 class="ipsewp"><a href="#">&raquo; Sectoral and Geographical Aspects of Innovation</a></h4></li>
 	      <li class="divider"></li>
-	      <li><h4><a href="#">Firm Level Innovation and Entrepreneurship</a></h4></li><hl>
+	      <li><h4 class="ipsewp"><a href="#">&raquo; Firm Level Innovation and Entrepreneurship</a></h4></li><hl>
 	    </ul>
 	  </div> <!-- Doormat second -->
 	</div>
 	
-	<div class="span7">
+	<div class="span4">
 	  <!-- Carousel -->
 	  <div id="myCarousel" class="carousel slide">
 	    <!-- Carousel items -->
@@ -81,5 +71,18 @@
 	  </div> <!-- Carousel -->
 	</div>
 	
+	<div class="span2">
+	  <div class="well" >
+	    Follow us on
+	    <!-- Social -->
+	    <div class="social_icons">
+	      <a href="http://www.facebook.com/pages/IPSE/383610961706781"  target="_top"><img alt="Like us on Facebook" src="/assets/social_facebook.png"></a>
+	      <a href="http://twitter.com/#!/IPSE_IRU" " target="_top"><img alt="Follow us on Twitter" src="/assets/social_twitter.png"></a>
+	      <a href="http://www.linkedin.com/groups/Innovation-Policy-Simulation-Smart-Economy-4515718?gid=4515718&trk=hb_side_g" " target="_top"><img alt="Follow us on LinkedIn" src="/assets/social_linkedin.png"></a>
+	    </div> <!-- social_icons -->
+	  </div>
+	</div>
+  
   </div>
+  
 </div>
