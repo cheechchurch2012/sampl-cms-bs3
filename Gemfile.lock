@@ -188,6 +188,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby (= 3.0.1)
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.6)

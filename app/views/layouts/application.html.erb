@@ -9,11 +9,18 @@
       <header id="header">
         <%= render '/refinery/header' -%>
       </header>
-      <section id="page">
-        <%= yield %>
-      </section>
+      <div class="container">
+        <section id="page">
+          <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %>"><%= value %></div>
+          <% end %>
+          <%= yield %>
+        </section>
+      </div>
       <footer>
-        <%= render '/refinery/footer' -%>
+        <div align="center">
+          <%= render '/refinery/footer' -%>
+        </div>
       </footer>
     </div>
     <%= render '/refinery/javascripts' %>

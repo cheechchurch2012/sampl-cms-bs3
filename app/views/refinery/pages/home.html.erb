@@ -1,6 +1,85 @@
-<section id='body_content'>
-  <%=raw @page.content_for(:body) %>
-</section>
-<section id='side_body_content'>
-  <%=raw @page.content_for(:side_body) %>
-</section>
+<div class="container">
+
+  <!-- Logos top  -->
+  <section id='body_content'>
+    <%=raw @page.content_for(:logostop) %>
+  </section>
+  
+  <!-- Banner  -->
+  <div class="hero-unit">
+    <%= image_tag "logo_IPSE.jpg" %>
+    <section id='body_content'>
+		<%=raw @page.content_for(:banner) %>
+	</section>
+    <p><a class="btn primary large">Learn more &raquo;</a></p>
+  </div>
+  
+  <div class="row">
+    <div class="span2">
+    
+      <!-- Doormat  first -->
+      <div class="well" style="padding: 8px 0;">
+        <ul class="nav nav-list">
+          <li class="nav-header"><a href="#">PEOPLE</a></li>
+          <li class="nav-header"><a href="#">WORKSHOPS</a></li>
+          <li class="nav-header"><a href="#">LECTURES</a></li>
+          <li class="divider"></li>
+          <% if signed_in_member? %>
+          <li class="nav-header"><%= link_to "MEMBERS",  '#' %></li>
+          <li class="nav-header"><%= link_to "ACCOUNT",  '#' %></li>
+          <li><%= link_to "Profile",  main_app.member_path(current_member) %></li>
+          <li><%= link_to "Settings", main_app.edit_member_path(current_member) %></li>
+          <li class="divider"></li>
+          <li><%= link_to "Sign out", main_app.signout_path, method: "delete" %></li>
+          <% else %>
+          <li><%= link_to "Sign in", main_app.signin_path %></li>
+          <% end %>
+        </ul>
+      </div> <!-- Doormat first >
+      
+      <!-- Sign up button -->
+      <div style="padding: 8px 0;">
+        <%= link_to "Sign up now!", '/signup', class: "btn btn-large" %>
+      </div>
+      
+      <!-- Social -->
+      <div class="social_icons">
+        <a href="http://www.facebook.com/pages/IPSE/383610961706781"  target="_top"><img alt="Like us on Facebook" src="/assets/social_facebook.png"></a>
+        <a href="http://twitter.com/#!/IPSE_IRU" " target="_top"><img alt="Follow us on Twitter" src="/assets/social_twitter.png"></a>
+        <a href="http://www.linkedin.com/groups/Innovation-Policy-Simulation-Smart-Economy-4515718?gid=4515718&trk=hb_side_g" " target="_top"><img alt="Follow us on LinkedIn" src="/assets/social_linkedin.png"></a>
+      </div> <!-- social_icons -->
+      
+    </div>
+    
+	<div class="span3">
+	  <!-- Doormat second -->
+	  <div class="well" style="padding: 8px 0;">
+	    <ul class="nav nav-list">
+	      <li class="nav-header">WORK PACKAGES</li>
+	      <li class="divider"></li>
+	      <li><h4><a href="#">IRU's Computational Policy Lab</a></h4></li>
+	      <li class="divider"></li>
+	      <li><h4><a href="#">Sectoral and Geographical Aspects of Innovation</a></h4></li>
+	      <li class="divider"></li>
+	      <li><h4><a href="#">Firm Level Innovation and Entrepreneurship</a></h4></li><hl>
+	    </ul>
+	  </div> <!-- Doormat second -->
+	</div>
+	
+	<div class="span7">
+	  <!-- Carousel -->
+	  <div id="myCarousel" class="carousel slide">
+	    <!-- Carousel items -->
+	    <div class="carousel-inner">
+	      <div class="active item"><img alt="" src="/assets/carousel_tree.png"></div>
+	      <div class="item"><img alt="" src="/assets/carousel_lcf.png"></div>
+	      <div class="item"><img alt="" src="/assets/carousel_population.png"></div>
+	    </div>
+	    <!-- Carousel nav -->
+	    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	  </div> <!-- Carousel -->
+	</div>
+	
+  </div>
+</div>
