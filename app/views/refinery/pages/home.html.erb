@@ -35,7 +35,7 @@
           <section id='content_banner'>
             <%=raw @page.content_for(:body) %>
           </section>
-          <p><a class="btn primary large">Learn more &raquo;</a></p>
+          <p><a class="btn primary large" href="/about">Learn more &raquo;</a></p>
         </div>
         <div id="carousel" class="span4">
           <!-- Carousel -->
@@ -63,8 +63,8 @@
           <li class="nav-header"><a href="#">LECTURES</a></li>
           <li class="divider"></li>
           <% if signed_in_member? %>
-          <li class="nav-header"><%= link_to "MEMBERS",  '#' %></li>
-          <li class="nav-header"><%= link_to "ACCOUNT",  '#' %></li>
+          <li class="nav-header"><%= link_to "MEMBERS", '#' %></li>
+          <li class="nav-header"><%= link_to "ACCOUNT", '#' %></li>
           <li><%= link_to "Profile",  main_app.member_path(current_member) %></li>
           <li><%= link_to "Settings", main_app.edit_member_path(current_member) %></li>
           <li class="divider"></li>
@@ -76,13 +76,13 @@
           <p>Follow us on</p>
           <!-- Social icons -->
           <div class="social_icons">
-            <a href="http://www.facebook.com/pages/IPSE/383610961706781"  target="_blank">
+            <a href="http://www.facebook.com/pages/IPSE/383610961706781" target=_blank>
               <img alt="Like us on Facebook" src="/assets/social_facebook.png">
             </a>
-            <a href="http://twitter.com/#!/IPSE_IRU" " target="_blank">
+            <a href="http://twitter.com/#!/IPSE_IRU" target=_blank>
               <img alt="Follow us on Twitter" src="/assets/social_twitter.png">
             </a>
-            <a href="http://www.linkedin.com/groups/Innovation-Policy-Simulation-Smart-Economy-4515718?gid=4515718&trk=hb_side_g" " target="_blank">
+            <a href="http://www.linkedin.com/groups/Innovation-Policy-Simulation-Smart-Economy-4515718?gid=4515718&trk=hb_side_g" target=_blank>
               <img alt="Follow us on LinkedIn" src="/assets/social_linkedin.png">
             </a>
           </div> <!-- Social icons -->
