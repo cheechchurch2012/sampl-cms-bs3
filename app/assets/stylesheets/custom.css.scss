@@ -1,22 +1,14 @@
 /* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
-
-$grayDarker: #222;
-$gray: #555;
-$grayLight: #999;
+$grayDarker:  #222;
+$gray:        #555;
+$grayLight:   #999;
 $grayLighter: #eee;
-
-@mixin box_sizing {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 /* universal */
 
 html, body {
-  background: url("http://cms.ucd.ie/t4cms/background_page.png") repeat-x scroll left top #E7E7E7;
+  background: url(/assets/background_page.png) repeat-x scroll left top #e7e7e7;
   color: #333333;
 }
 
@@ -67,11 +59,29 @@ p {
   padding-bottom: 0;
 }
 
+/* hero-unit */
+
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  background-image: url(/assets/logo_ipse.png);
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  
+  h2 {
+    color: #004781;
+    line-height: 1.3em;
+  }
+}
+
 /* well */
 
 .well {
-  background: url("http://cms.ucd.ie/t4cms/background_doormat.png") repeat-x scroll left top #F5F5F5;
-  border-color: #DDDDDC;
+  background: url(/assets/background_doormat.png) repeat-x scroll left top #F5F5F5;
+  border-color: #dddddc;
   border-style: solid;
   border-width: 0 1px 1px;
   padding: 15px;

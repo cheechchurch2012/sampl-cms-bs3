@@ -1,4 +1,6 @@
 ---
+background_doormat.png: background_doormat-cf1c12900adf1f91c22b143a898af344.png
+background_page.png: background_page-fa2eea89be0f0f4a45c28a7cde215af9.png
 carousel_lcf.png: carousel_lcf-54482573d8577f645ba345c6e4928d19.png
 carousel_population.png: carousel_population-56905ea89202b263d2672086e6eb59aa.png
 carousel_tree.png: carousel_tree-e5b31043033ef6a10684e4ab5f7c8b0e.png
@@ -10,7 +12,7 @@ social_facebook.png: social_facebook-78ef558ac23dabf2ef0dde142d2f768b.png
 social_linkedin.png: social_linkedin-c5caccc859aa89efaf7ae1fb894a007b.png
 social_twitter.png: social_twitter-ea21d7f71f03978afc41d95a66530e43.png
 application.js: application-49012760e110c34f879b6f1c12416600.js
-application.css: application-6883f85e13bfd440ccec91ecc87173a4.css
+application.css: application-ab3cb6a1e21f07a734a9b3f5a93382f6.css
 refinery/icons/flags/ad.png: refinery/icons/flags/ad-00aca05154ef9f55a27b21a2635fa28e.png
 refinery/icons/flags/ae.png: refinery/icons/flags/ae-43d95e091d0171e99630fadb2a821a45.png
 refinery/icons/flags/af.png: refinery/icons/flags/af-c9449e9d9c8ecffaa34fcebc0d658d29.png
