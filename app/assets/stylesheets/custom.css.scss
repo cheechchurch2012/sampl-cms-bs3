@@ -30,11 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
+h1, h2 {
   font-size: 1.7em;
   margin-bottom: 15px;
 }
@@ -133,7 +129,6 @@ p {
 footer {
   margin-top: 5px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
   color: $grayLight;
   a {
     color: $gray;
