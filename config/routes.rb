@@ -1,5 +1,8 @@
 SamplCmsBs3::Application.routes.draw do
   
+  get "static_pages/home"
+  get "secure_pages/home"
+  
   resources :members
   resources :sessions, only: [:new, :create, :destroy]
   

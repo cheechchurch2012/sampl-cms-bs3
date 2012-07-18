@@ -1,0 +1,2 @@
+module SecurePagesHelper
+end
