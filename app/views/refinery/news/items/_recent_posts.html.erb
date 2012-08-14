@@ -1,0 +1,9 @@
+<ul class="nav nav-list">
+  <li class="nav-header">ANNOUNCEMENTS</li>
+  <% @items.each do |item| %>
+    <li class="divider"></li>
+    <li>
+      <%= link_to item.title, refinery.news_item_path(item) %>
+    </li>
+  <% end %>
+</ul>

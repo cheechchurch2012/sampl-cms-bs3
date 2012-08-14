@@ -58,9 +58,9 @@
       <div id="menu" class="span3 well">
         <!-- Doormat  menu -->
         <ul class="nav nav-list">
-          <li class="nav-header"><a href="#">PEOPLE</a></li>
-          <li class="nav-header"><a href="#">WORKSHOPS</a></li>
-          <li class="nav-header"><a href="#">LECTURES</a></li>
+          <li class="nav-header"><a href="partners">PARTNERS</a></li>
+          <li class="nav-header"><a href="workshops">WORKSHOPS</a></li>
+          <li class="nav-header"><a href="ipse-lecture-series">IPSE LECTURE SERIES</a></li>
           <li class="divider"></li>
           <% if signed_in_member? %>
           <li class="nav-header"><%= link_to "MEMBERS", "secure_pages/home" %></li>
@@ -99,9 +99,13 @@
           <li><h4><a href="#">&raquo; Firm Level Innovation and Entrepreneurship</a></h4></li><hl>
         </ul> <!-- Doormat work -->
       </div>
+
+      <div id="announcements" class="span3 well">
+        <% @items = Refinery::News::Item.latest(5) %>
+        <%= render :partial => '/refinery/news/items/recent_posts' %>
       </div>
     </div>
-
+    
     <div id="homepage-footer">
       <p>Innovation Policy Simulation for the Smart Economy (IPSE)</p>
     </div>
